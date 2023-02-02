@@ -24,7 +24,7 @@
     "dev:admin": "node .github/dev.js --admin",
     "dev:ghost": "node .github/dev.js --ghost",
     "dev": "node .github/dev.js",
-    "fix": "yarn cache clean && rm -rf node_modules && yarn",
+    "fix": "yarn cache clean && rm -rf node_modules && yarn install --network-timeout 1000000 && yarn",
     "knex-migrator": "yarn workspace ghost run knex-migrator",
     "lint": "yarn workspaces run lint",
     "setup": "yarn && yarn workspace ghost run setup && git submodule update --init",
