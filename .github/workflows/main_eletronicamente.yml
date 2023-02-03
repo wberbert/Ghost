@@ -19,11 +19,10 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v1
         with:
-          node-version: '18.x'
+          node-version: '16.x'
 
       - name: npm install, build, and test
         run: |
-          npm install npm@latest
           npm install yarn
           yarn install
           npm install
