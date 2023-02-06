@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'eletronicamente'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4B66243F77184295B13784BB07F7E55A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9312F6127CEA4EED80C61986BCAAB65D }}
           package: .
